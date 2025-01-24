@@ -1,0 +1,3 @@
+# PHP File Handling Bug: Resource Leak
+
+This repository demonstrates a common error in PHP file handling: resource leaks due to a lack of exception handling during file processing.  The `bug.php` file shows the flawed code, which fails to properly close the file handle if an error occurs during file reading.  The solution, `bugSolution.php`, demonstrates a more robust approach using a `try-catch` block to ensure proper resource cleanup even if exceptions arise.
